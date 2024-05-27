@@ -1,3 +1,6 @@
+## 文件说明 
+主要设计文件位于[designs](designs)文件夹，模块位于[modules](modules)文件夹  
+详细报告文件位于[汇总报告](汇总报告.pdf)
 ## 流程
 1. NE555 输出1561Hz的方波：
     ```math
@@ -11,7 +14,7 @@
 
     1次谐波使用[ButterWorth](LowpassFilter-2ndOrderButterworth.pdf)低通滤波器(增益为1)
     
-    3,5次谐波使用[DABP](mt-209_cn_DABP.pdf)带通滤波器(增益为1)
+    3,5次谐波使用[DABP](Reference/mt-209_cn_DABP.pdf)带通滤波器(增益为1)
 
     然后对各次输出进行适当移向，使其相位与方波一致
     得到![各次谐波与方波对比图](pics/各次谐波与方波对比图.png)
